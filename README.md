@@ -1,44 +1,44 @@
 ```
-                                  _
-                                 | |
-         _           ___ ___   __| | ___ _ ____   ___   _
- {    ('   )    }   / __/ _ \ / _` |/ _ \ '_ \ \ / / | | |
-{{  ('       )  }} | (_| (_) | (_| |  __/ | | \ V /| |_| |
- { (__,__,__,_) }   \___\___/ \__,_|\___|_| |_|\_/  \__, |
-                                                     __/ |
-                                                    |___/
+                                  
+              _             _   _           
+     /\      | |           | | (_)          
+    /  \   __| | __ _ _ __ | |_ ___   _____ 
+   / /\ \ / _` |/ _` | '_ \| __| \ \ / / _ \
+  / ____ \ (_| | (_| | |_) | |_| |\ V /  __/
+ /_/    \_\__,_|\__,_| .__/ \__|_| \_/ \___|
+                     | |                    
+                     |_|   
+                                      
 ```
 
-Codenvy command line interface V2
+Adaptive command line interface V2
 =================================
 
 
-![CLI](https://raw.githubusercontent.com/benoitf/cli-web-site/master/img/cli.gif)
+Documentation for the CLI can be found on http://docs.adaptive.me/cli
 
-Documentation for the CLI can be found on http://docs.codenvy.com/cli
-
-CLI Syntax documentation: http://docs.codenvy.com/cli/cli-syntax/
+CLI Syntax documentation: http://docs.adaptive.me/cli/cli-syntax/
 
 
 # Quick Start for the developer
 ------------------------------
 
 ## Building
-1. Checkout of the project: git clone https://github.com/codenvy/cli
+1. Checkout of the project: git clone https://github.com/adaptive/cli
 2. Build: mvn clean install
 
 ## Running
 1. Launch from the root directory of the project:
 
-  ./codenvy
+  ./adaptive
   
-  ./codenvy command-name
+  ./adaptive command-name
   
 (if no command is entered (like help) cli will use interactive mode)
 
 
 ## Developing a new command
-Apache Karaf is used for providing the Codenvy CLI.
+Apache Karaf is used for providing the Adaptive CLI.
 
 ### New command
 When adding a new builtin command, the following files need to be modified :
@@ -51,7 +51,7 @@ The first one is for providing the command to Interactive/OSGi mode and the next
 ### Advanced help 
 The guide to develop karaf command is available at http://karaf.apache.org/manual/latest/developers-guide/extending.html
 
-There is also `codenvy` command `stack-traces-print` to enable printing stacktraces.
+There is also `adaptive` command `stack-traces-print` to enable printing stacktraces.
 
 #### Timeouts
 
