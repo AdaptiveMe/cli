@@ -149,12 +149,12 @@ cellar       =]]></replacevalue>
                                     <replacetoken><![CDATA[completionMode = GLOBAL]]></replacetoken>
                                     <replacevalue><![CDATA[completionMode = SUBSHELL]]></replacevalue>
                                 </replace>
-                                <!-- Disable the change of the current directory of the codenvy runtime -->
+                                <!-- Disable the change of the current directory of the adaptive runtime -->
                                 <replace file="target/dependencies/apache-karaf-minimal-${org.apache.karaf.version}/bin/karaf">
                                     <replacetoken><![CDATA[cd "$KARAF_BASE"]]></replacetoken>
                                     <replacevalue />
                                 </replace>
-                                <replace file="target/classes/bin/unix/codenvy">
+                                <replace file="target/classes/bin/unix/adaptive">
                                     <replacetoken><![CDATA[CLASSPATH="$CLASSPATH:$KARAF_HOME/system/jline/jline/2.12/jline-2.12.jar"]]></replacetoken>
                                     <replacevalue><![CDATA[CLASSPATH="$CLASSPATH:$KARAF_HOME/lib/codenvy-branding.jar"
 CLASSPATH="$CLASSPATH:$KARAF_HOME/lib/codenvy-main.jar"
@@ -167,9 +167,9 @@ CLASSPATH="$CLASSPATH:$KARAF_HOME/system/jline/jline/2.12/jline-2.12.jar"]]></re
                                 <replace file="target/dependencies/apache-karaf-minimal-${org.apache.karaf.version}/bin/setenv.bat">
                                     <replacetoken><![CDATA[
 rem SET KARAF_TITLE]]></replacetoken>
-                                    <replacevalue><![CDATA[SET KARAF_TITLE=Codenvy]]></replacevalue>
+                                    <replacevalue><![CDATA[SET KARAF_TITLE=Adaptive]]></replacevalue>
                                 </replace>
-                                <replace file="target/classes/bin/windows/codenvy.bat">
+                                <replace file="target/classes/bin/windows/adaptive.bat">
                                     <replacetoken><![CDATA[set CLASSPATH=%CLASSPATH%;%KARAF_HOME%\system\jline\jline\2.12\jline-2.12.jar]]></replacetoken>
                                     <replacevalue><![CDATA[set CLASSPATH=%CLASSPATH%;%KARAF_HOME%\lib\codenvy-branding.jar
 set CLASSPATH=%CLASSPATH%;%KARAF_HOME%\lib\codenvy-main.jar
@@ -226,7 +226,7 @@ set CLASSPATH=%CLASSPATH%;%KARAF_HOME%\system\jline\jline\2.12\jline-2.12.jar]]>
                             <descriptors>
                                 <descriptor>src/main/assembly/assembly.xml</descriptor>
                             </descriptors>
-                            <finalName>codenvy-cli-${project.version}</finalName>
+                            <finalName>adaptive-cli-${project.version}</finalName>
                             <tarLongFileMode>gnu</tarLongFileMode>
                             <appendAssemblyId>false</appendAssemblyId>
                         </configuration>

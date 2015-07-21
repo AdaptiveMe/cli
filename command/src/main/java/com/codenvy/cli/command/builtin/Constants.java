@@ -33,7 +33,7 @@ public class Constants {
     /**
      * Preferences folder
      */
-    public static final String PREFERENCES_FOLDER = System.getProperty("user.home") + File.separator + ".codenvy";
+    public static final String PREFERENCES_FOLDER = System.getProperty("user.home") + File.separator + ".adaptive" + File.separator + "cli";
 
     /**
      * Default preferences resource name

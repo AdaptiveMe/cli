@@ -2,9 +2,9 @@
     "version" : "1.0",
     "config" : { },
     "remotes" : {
-        "default" : {
+        "adaptive" : {
             "defaultRemote" : true,
-            "url" : "https://codenvy.com"
+            "url" : "http://my.adaptive.me"
         }
     }
 }

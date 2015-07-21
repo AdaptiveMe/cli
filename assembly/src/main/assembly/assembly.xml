@@ -12,7 +12,7 @@
 
 -->
 <assembly>
-    <id>codenvy-cli</id>
+    <id>adaptive-cli</id>
     <formats>
         <format>dir</format>
         <format>tar.gz</format>
