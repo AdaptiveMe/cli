@@ -12,8 +12,6 @@
 
 package com.codenvy.cli.command.builtin;
 
-import jline.console.ConsoleReader;
-
 import com.codenvy.cli.command.builtin.util.ascii.AsciiArray;
 import com.codenvy.client.Codenvy;
 import com.codenvy.client.CodenvyException;
@@ -21,8 +19,7 @@ import com.codenvy.client.model.Factory;
 import com.codenvy.client.model.User;
 import com.codenvy.client.model.factory.FactoryCreator;
 import com.codenvy.client.model.factory.FactoryProject;
-
-import org.apache.karaf.shell.commands.Command;
+import jline.console.ConsoleReader;
 import org.apache.karaf.shell.commands.Option;
 import org.fusesource.jansi.Ansi;
 
@@ -39,7 +36,7 @@ import static org.fusesource.jansi.Ansi.Color.RED;
  * This command will list the factories
  * @author Florent Benoit
  */
-@Command(scope = "codenvy", name = "list-factories", description = "List factories")
+//@Command(scope = "codenvy", name = "list-factories", description = "List factories")
 public class ListFactoriesCommand extends AbsCommand {
 
     @Option(name = "--remote", description = "Name of the remote codenvy")

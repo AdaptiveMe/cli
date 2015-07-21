@@ -25,17 +25,12 @@ import com.codenvy.client.model.ProjectReference;
 import com.codenvy.client.model.RunnerStatus;
 import com.codenvy.client.model.runner.RunOptions;
 import com.codenvy.client.model.runner.RunOptionsBuilder;
-
 import org.apache.karaf.shell.commands.Argument;
-import org.apache.karaf.shell.commands.Command;
 import org.apache.karaf.shell.commands.Option;
 import org.apache.karaf.shell.console.SessionProperties;
 import org.fusesource.jansi.Ansi;
 
-import static com.codenvy.client.model.RunnerState.CANCELLED;
-import static com.codenvy.client.model.RunnerState.FAILED;
-import static com.codenvy.client.model.RunnerState.RUNNING;
-import static com.codenvy.client.model.RunnerState.STOPPED;
+import static com.codenvy.client.model.RunnerState.*;
 import static java.lang.String.format;
 import static org.fusesource.jansi.Ansi.Attribute.INTENSITY_BOLD;
 import static org.fusesource.jansi.Ansi.Attribute.INTENSITY_BOLD_OFF;
@@ -45,7 +40,7 @@ import static org.fusesource.jansi.Ansi.Color.RED;
  * Allows to run a given project
  * @author Florent Benoit
  */
-@Command(scope = "codenvy", name = "run", description = "Run a project")
+//@Command(scope = "codenvy", name = "run", description = "Run a project")
 public class RunnerCommand extends AbsCommand {
 
     @Argument(name = "project-id", description = "Specify the project ID to use", required = true, multiValued = false)

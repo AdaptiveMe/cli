@@ -16,9 +16,7 @@ import com.codenvy.cli.command.builtin.model.UserProjectReference;
 import com.codenvy.cli.command.builtin.model.UserRunnerStatus;
 import com.codenvy.client.model.Link;
 import com.codenvy.client.model.RunnerState;
-
 import org.apache.karaf.shell.commands.Argument;
-import org.apache.karaf.shell.commands.Command;
 import org.fusesource.jansi.Ansi;
 
 import static com.codenvy.cli.command.builtin.MultiRemoteCodenvy.checkOnlyOne;
@@ -29,7 +27,7 @@ import static org.fusesource.jansi.Ansi.Color.RED;
  * This command will open browser on the IDE URL of a given project, or access URL or download URL
  * @author Florent Benoit
  */
-@Command(scope = "codenvy", name = "open", description = "Starts a browser session to access a project, builder or runner")
+//@Command(scope = "codenvy", name = "open", description = "Starts a browser session to access a project, builder or runner")
 public class OpenCommand extends AbsCommand {
 
     @Argument(name = "id", description = "Specify the project/builder/runner ID to use", required = true, multiValued = false)

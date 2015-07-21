@@ -14,9 +14,7 @@ import com.codenvy.cli.command.builtin.model.DefaultUserRunnerStatus;
 import com.codenvy.cli.command.builtin.model.UserProjectReference;
 import com.codenvy.cli.command.builtin.model.UserRunnerStatus;
 import com.codenvy.client.model.RunnerStatus;
-
 import org.apache.karaf.shell.commands.Argument;
-import org.apache.karaf.shell.commands.Command;
 import org.fusesource.jansi.Ansi;
 
 import java.util.ArrayList;
@@ -30,7 +28,7 @@ import static org.fusesource.jansi.Ansi.Color.RED;
  * This command will stop a  given runner or all the runners of a given project.
  * @author Florent Benoit
  */
-@Command(scope = "codenvy", name = "stop", description = "Stop one or more runner processes")
+//@Command(scope = "codenvy", name = "stop", description = "Stop one or more runner processes")
 public class StopCommand extends AbsCommand {
 
     @Argument(name = "id", description = "Specify the runnerID or projectID to use", required = true, multiValued = false)

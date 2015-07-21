@@ -11,12 +11,9 @@
 
 package com.codenvy.cli.command.builtin;
 
-import jline.console.ConsoleReader;
-
 import com.codenvy.client.Codenvy;
-
+import jline.console.ConsoleReader;
 import org.apache.karaf.shell.commands.Argument;
-import org.apache.karaf.shell.commands.Command;
 import org.apache.karaf.shell.commands.Option;
 import org.fusesource.jansi.Ansi;
 
@@ -33,7 +30,7 @@ import static org.fusesource.jansi.Ansi.Color.RED;
  * This command will delete a factory.
  * @author Florent Benoit
  */
-@Command(scope = "codenvy", name = "delete-factory", description = "Delete a factory")
+//@Command(scope = "codenvy", name = "delete-factory", description = "Delete a factory")
 public class DeleteFactoryCommand extends AbsCommand {
 
     @Argument(name = "id", description = "Factory ID", required = true)

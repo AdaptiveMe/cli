@@ -15,19 +15,11 @@ import com.codenvy.client.Codenvy;
 import com.codenvy.client.model.Factory;
 import com.codenvy.client.model.Link;
 import com.codenvy.client.model.Project;
-
 import org.apache.karaf.shell.commands.Argument;
-import org.apache.karaf.shell.commands.Command;
 import org.apache.karaf.shell.commands.Option;
 import org.fusesource.jansi.Ansi;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
+import java.io.*;
 import java.nio.charset.Charset;
 import java.util.List;
 
@@ -39,7 +31,7 @@ import static org.fusesource.jansi.Ansi.Color.RED;
  * This command will create a factory.
  * @author Florent Benoit
  */
-@Command(scope = "codenvy", name = "create-factory", description = "Create a factory")
+//@Command(scope = "codenvy", name = "create-factory", description = "Create a factory")
 public class CreateFactoryCommand extends AbsCommand {
 
     /**

@@ -11,7 +11,6 @@
 package com.codenvy.cli.command.builtin;
 
 import org.apache.karaf.shell.commands.Argument;
-import org.apache.karaf.shell.commands.Command;
 import org.fusesource.jansi.Ansi;
 
 /**
@@ -19,7 +18,7 @@ import org.fusesource.jansi.Ansi;
  * This command will allow to manage remote remotes that can be connected to the CLI.
  * @author Florent Benoit
  */
-@Command(scope = "codenvy", name = "remote", description = "Add or remove remote Codenvy cloud references")
+//@Command(scope = "codenvy", name = "remote", description = "Add or remove remote Codenvy cloud references")
 public class RemoteCommand extends AbsCommand {
 
     @Argument(name = "flag", description = "Manage remote : add/remove/rename/set-default", required = false, multiValued = false, index = 0)

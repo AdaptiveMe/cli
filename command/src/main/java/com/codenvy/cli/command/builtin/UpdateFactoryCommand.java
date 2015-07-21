@@ -13,19 +13,11 @@
 package com.codenvy.cli.command.builtin;
 
 import com.codenvy.client.Codenvy;
-
 import org.apache.karaf.shell.commands.Argument;
-import org.apache.karaf.shell.commands.Command;
 import org.apache.karaf.shell.commands.Option;
 import org.fusesource.jansi.Ansi;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
+import java.io.*;
 import java.nio.charset.Charset;
 
 import static java.lang.String.format;
@@ -36,7 +28,7 @@ import static org.fusesource.jansi.Ansi.Color.RED;
  * This command will update a factory with the given factory.
  * @author Florent Benoit
  */
-@Command(scope = "codenvy", name = "update-factory", description = "Update a factory")
+//@Command(scope = "codenvy", name = "update-factory", description = "Update a factory")
 public class UpdateFactoryCommand extends AbsCommand {
 
     @Argument(name = "id", description = "Factory ID", required = true, index = 0)
